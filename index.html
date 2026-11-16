@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý sản phẩm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Quản lý sản phẩm</h1>
+            <p>Hệ thống quản lý thông tin sản phẩm</p>
+        </header>
+
+        <section class="form-box">
+            <h2 id="formTitle">Thêm sản phẩm</h2>
+
+            <form id="productForm">
+                <div class="form-group">
+                    <label for="ma">Mã sản phẩm</label>
+                    <input type="text" id="ma" placeholder="Nhập mã sản phẩm" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="ten">Tên sản phẩm</label>
+                    <input type="text" id="ten" placeholder="Nhập tên sản phẩm" required>
+                </div>
+
+                <button type="submit" id="submitBtn">Thêm sản phẩm</button>
+                <button type="button" id="cancelBtn" class="cancel-btn" hidden>Hủy sửa</button>
+            </form>
+        </section>
+
+        <section class="table-box">
+            <h2>Danh sách sản phẩm</h2>
+
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Mã sản phẩm</th>
+                            <th>Tên sản phẩm</th>
+                            <th>Thao tác</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="productList">
+                        <!-- Du lieu hien thi tai day -->
+                    </tbody>
+                </table>
+            </div>
+
+            <p id="emptyMessage">Chưa có sản phẩm nào.</p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
